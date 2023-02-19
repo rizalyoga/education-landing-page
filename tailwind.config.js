@@ -9,7 +9,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Configure your color palette here
+        "primary-violet": "#6B5CF6",
+        "primary-green": "#95D354",
+        "primary-pink": "#EE71C7",
+        "primary-cyan": "#50C4EE",
+        "primary-text": "#333333",
+        "secondary-violet": "#F1F0FF",
+        "secondary-text": "#929199",
+      },
+    },
   },
   plugins: [],
 };
