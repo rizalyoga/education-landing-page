@@ -15,7 +15,9 @@ const Layout = ({ children }: LayoutProps) => {
         <title>Education Page</title>
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main>
+        <div className="container">{children}</div>
+      </main>
       <Footer />
     </>
   );

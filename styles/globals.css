@@ -9,3 +9,8 @@
     font-family: "Red Hat Display", sans-serif;
   }
 }
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
