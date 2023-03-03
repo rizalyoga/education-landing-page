@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <div className="flex justify-between min-h-[337px] items-center">
             <div className="basis-[25%]">
-              <h1 className="font-bold text-[48px] text-white ">EDU</h1>
+              <h1 className="font-bold text-[48px] text-white ">Athalias</h1>
               <p className="text-white leading-8 my-6">
                 Car seemed to float in the middle of an immense dark sphere,
                 whose upper.
