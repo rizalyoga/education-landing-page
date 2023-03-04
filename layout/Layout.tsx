@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>Education Page</title>
+        <title>Athalia&apos;s Blessing</title>
       </Head>
       <Navbar />
       <main>

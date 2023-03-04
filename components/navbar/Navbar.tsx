@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="bg-primary-violet ">
       <div className="container">
         <div className="min-h-[112px] flex justify-between items-center h-full">
-          <h1 className="font-bold text-[40px] text-white">Athalias</h1>
+          <h1 className="font-bold text-[40px] text-white">Athalia&apos;s</h1>
           <form className="relative">
             <input
               type="text"
