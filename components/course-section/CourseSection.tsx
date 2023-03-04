@@ -7,9 +7,7 @@ const CourseSection = () => {
   return (
     <section className="min-h-[880px] relative my-20">
       <div className="container">
-        <h4 className="text-primary-text font-bold text-center  mb-10">
-          COURSE
-        </h4>
+        <h4 className="text-primary-text font-bold text-center mb-8">COURSE</h4>
         <h1 className="text-[56px] font-bold text-primary-text text-center mb-[63px]">
           Popular Subjects
         </h1>

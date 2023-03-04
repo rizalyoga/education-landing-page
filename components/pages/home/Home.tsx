@@ -5,6 +5,7 @@ import AboutSection from "@/components/about-section/AboutSection";
 import CourseSection from "@/components/course-section/CourseSection";
 import ContactSection from "@/components/contact-section/ContactSection";
 import TotalSection from "@/components/total-section/TotalSection";
+import TeacherSection from "@/components/teacher-section/TeacherSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <AboutSection />
         <CourseSection />
         <TotalSection />
+        <TeacherSection />
         <ContactSection />
       </div>
     </Layout>
