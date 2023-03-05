@@ -5,7 +5,7 @@ import polcadot from "public/assets/shapes/pink-polcadot.svg";
 
 const AboutSection = () => {
   return (
-    <section className="min-h-[880px] relative flex items-center">
+    <section className="min-h-[880px] relative flex items-center my-20">
       <div className="absolute w-[80%] h-full bg-secondary-violet right-0"></div>
       <div className="container h-full flex items-center gap-32">
         <div className="z-10">
@@ -30,7 +30,7 @@ const AboutSection = () => {
             square, was moving across the sand in their direction. When it came
             near enough he perceived.
           </p>
-          <button className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full">
+          <button className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75">
             Explore
           </button>
         </div>

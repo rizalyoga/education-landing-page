@@ -19,17 +19,17 @@ const Footer = () => {
                 whose upper.
               </p>
               <ul className="flex gap-4">
-                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center">
+                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center hover:bg-primary-pink duration-75">
                   <a href="">
                     <Image src={facebook} alt="facebook" />
                   </a>
                 </li>
-                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center">
+                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center hover:bg-primary-pink duration-75">
                   <a href="">
                     <Image src={twiter} alt="twitter" />
                   </a>
                 </li>
-                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center">
+                <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center hover:bg-primary-pink duration-75">
                   <a href="">
                     <Image src={instagram} alt="instagram" />
                   </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                 placeholder="Your Email"
                 className="w-[370px] h-[48px] rounded-full p-3"
               />
-              <button className="w-[170px] h-[48px] rounded-full bg-primary-green my-[18px] text-white font-bold">
+              <button className="w-[170px] h-[48px] rounded-full bg-primary-green my-[18px] text-white font-bold hover:border-2 hover:border-white duration-75">
                 Subsribe
               </button>
             </div>

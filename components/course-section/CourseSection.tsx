@@ -25,7 +25,7 @@ const CourseSection = () => {
           <CourseCard />
         </div>
         <div className="flex justify-center items-center mt-20">
-          <button className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full">
+          <button className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full hover:bg-primary-green hover:text-white duration-75">
             See all
           </button>
         </div>

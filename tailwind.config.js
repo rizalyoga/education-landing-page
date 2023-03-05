@@ -19,6 +19,7 @@ module.exports = {
         "primary-text": "#333333",
         "secondary-violet": "#F1F0FF",
         "secondary-text": "#929199",
+        "sub-page": "#FBF8FE",
       },
     },
   },

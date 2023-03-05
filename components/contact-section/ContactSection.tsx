@@ -52,7 +52,7 @@ const ContactSection = () => {
                   <input
                     type="submit"
                     value="Submit"
-                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer absolute right-0"
+                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer absolute right-0 hover:border-2 hover:border-white duration-75"
                   />
                 </div>
               </div>
