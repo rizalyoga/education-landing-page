@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import TeacherCard from "../cards/TeacherCard";
+import TeacherCard from "../../cards/TeacherCard";
 
 const TeacherSection = () => {
   const router = useRouter();

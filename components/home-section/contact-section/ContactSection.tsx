@@ -9,7 +9,7 @@ const ContactSection = () => {
       <div className="container h-full">
         <div className="h-full flex items-center gap-24 min-h-screen">
           <div className="basis-[35%]">
-            <h4 className="font-bold text-primary-text">CONTACT US</h4>
+            <h4 className="font-bold text-primary-text">REGISTER</h4>
             <h2 className="font-bold text-primary-text text-[56px] my-12">
               Register Now
             </h2>

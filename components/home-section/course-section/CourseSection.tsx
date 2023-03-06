@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import CourseCard from "../cards/CourseCard";
+import CourseCard from "../../cards/CourseCard";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
 
 const CourseSection = () => {

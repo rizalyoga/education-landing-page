@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "@/layout/Layout";
-import TeacherCard from "@/components/home-section/cards/TeacherCard";
+import TeacherCard from "@/components/cards/TeacherCard";
 import bluePolcadot from "public/assets/shapes/blue-polcadot.svg";
 
 const TeamPage = () => {
@@ -37,7 +37,7 @@ const TeamPage = () => {
             <div className="flex justify-center items-center gap-4">
               <div className="h-2 w-8 bg-primary-cyan rounded-lg"></div>
               <h3 className="text-primary-text text-2xl font-bold text-center ">
-                FOUNDATION MANAGEMENT COMPOSITION
+                PROFESSIONAL COLLEAGUES
               </h3>
               <div className="h-2 w-8 bg-primary-cyan rounded-lg"></div>
             </div>
