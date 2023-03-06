@@ -5,7 +5,7 @@ import course from "public/assets/photos/about-pic.svg";
 const TeacherCard = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="relative w-[170px] h-[170px] bg-primary-pink rounded-full z-10 border-4 border-primary-pink ">
+      <div className="relative w-[170px] h-[170px] bg-primary-cyan rounded-full z-10 border-4 border-primary-cyan ">
         <Image
           src={course}
           alt="teacher-photos"

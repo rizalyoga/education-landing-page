@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import student from "public/assets/shapes/student.svg";
 import teacher from "public/assets/shapes/teacher.svg";
-import clas from "public/assets/shapes/class.svg";
+import courses from "public/assets/shapes/courses.svg";
 
 const TotalSection = () => {
   return (
@@ -24,9 +24,9 @@ const TotalSection = () => {
             </div>
           </div>
           <div className=" bg-primary-green p-8 rounded-3xl flex justify-center gap-5 min-w-[300px] ">
-            <Image src={clas} alt="student-logo" />
+            <Image src={courses} alt="student-logo" />
             <div className="">
-              <h1 className="text-white font-bold text-[56px]">6</h1>
+              <h1 className="text-white font-bold text-[56px]">4</h1>
               <p className="text-white -mt-5"> Class</p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import polcadot from "public/assets/shapes/pink-polcadot.svg";
 
 const ContactSection = () => {
   return (
-    <section className="min-h-[880px] my-20 relative">
+    <section className="min-h-[880px] my-20 relative" id="register">
       <div className="absolute w-[80%] h-full bg-secondary-violet -z-10 "></div>
       <div className="container h-full">
         <div className="h-full flex items-center gap-24 min-h-screen">

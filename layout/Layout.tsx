@@ -13,6 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Head>
         <title>Athalia&apos;s Blessing</title>
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <Navbar />
       <main>

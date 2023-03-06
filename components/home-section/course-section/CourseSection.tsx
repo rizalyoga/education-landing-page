@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import CourseCard from "../cards/CourseCard";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
 
 const CourseSection = () => {
+  const router = useRouter();
+
   return (
     <section className="min-h-[880px] relative my-20">
       <div className="container">
@@ -25,8 +28,11 @@ const CourseSection = () => {
           <CourseCard />
         </div>
         <div className="flex justify-center items-center mt-20">
-          <button className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full hover:bg-primary-green hover:text-white duration-75">
-            See all
+          <button
+            className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full hover:bg-primary-green hover:text-white duration-75"
+            onClick={() => router.push("courses")}
+          >
+            See Details
           </button>
         </div>
       </div>

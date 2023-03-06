@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import aboutPic from "public/assets/photos/about-pic.svg";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
 
 const AboutSection = () => {
+  const router = useRouter();
+
   return (
     <section className="min-h-[880px] relative flex items-center my-20">
       <div className="absolute w-[80%] h-full bg-secondary-violet right-0"></div>
@@ -30,7 +33,10 @@ const AboutSection = () => {
             square, was moving across the sand in their direction. When it came
             near enough he perceived.
           </p>
-          <button className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75">
+          <button
+            className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75"
+            onClick={() => router.push("about")}
+          >
             Explore
           </button>
         </div>
