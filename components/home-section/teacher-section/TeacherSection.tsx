@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import TeacherCard from "../../cards/TeacherCard";
+import { OrganizationDataType } from "@/data/type";
+import dataTeams from "data/teams.json";
 
 const TeacherSection = () => {
   const router = useRouter();
+  const [dataTeam, setDataTeams] = useState<OrganizationDataType[]>(dataTeams);
 
   return (
     <section className="min-h-[880px] relative my-20">
@@ -13,12 +16,15 @@ const TeacherSection = () => {
           Expert Advisors
         </h1>
         <div className="card-container grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          <TeacherCard />
-          <TeacherCard />
-          <TeacherCard />
-          <TeacherCard />
-          <TeacherCard />
-          <TeacherCard />
+          {dataTeam.map((data, index) => (
+            <div key={index}>
+              <TeacherCard
+                name={data.name}
+                image={data.image}
+                jabatan={data.jabatan}
+              />
+            </div>
+          ))}
         </div>
         <div className="flex justify-center items-center mt-16">
           <button

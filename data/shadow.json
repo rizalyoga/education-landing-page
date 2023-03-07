@@ -1,49 +1,47 @@
 [
-  [
-    {
-      "image": "",
-      "name": "Miss Maria",
-      "jabatan": "Koordinator Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Niken",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Mr. Bagus R.",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Magda",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Virna",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Ratna",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Isvi",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Tirza",
-      "jabatan": "Shadow Teacher"
-    },
-    {
-      "image": "",
-      "name": "Miss Reni",
-      "jabatan": "Shadow Teacher"
-    }
-  ]
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-maria.png",
+    "name": "Miss Maria",
+    "jabatan": "Koordinator Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-niken.png",
+    "name": "Miss Niken",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-bagus.png",
+    "name": "Mr. Bagus R.",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-magda.png",
+    "name": "Miss Magda",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-virna.png",
+    "name": "Miss Virna",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-ratna.png",
+    "name": "Miss Ratna",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-isvi.png",
+    "name": "Miss Isvi",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-tirza.png",
+    "name": "Miss Tirza",
+    "jabatan": "Shadow Teacher"
+  },
+  {
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-reni.png",
+    "name": "Miss Reni",
+    "jabatan": "Shadow Teacher"
+  }
 ]
