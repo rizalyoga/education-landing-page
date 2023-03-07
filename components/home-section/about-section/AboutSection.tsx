@@ -29,9 +29,11 @@ const AboutSection = () => {
           </h1>
           <p className="my-[23px] text-primary-text">Distant orb has power</p>
           <p className="text-secondary-text ">
-            What looked like a small patch of purple grass, above five feet
-            square, was moving across the sand in their direction. When it came
-            near enough he perceived.
+            Kami adalah pakar dalam bidang pendidikan dan terapi anak-anak
+            berkebutuhan khusus serta pengembangan potensi anak. Sebagai yayasan
+            penyedia layanan pendampingan pendidikan dan terapi, kami memiliki
+            tenaga profesional terlatih dan berpengalaman untuk membantu
+            anak-anak mencapai potensi terbaik mereka.
           </p>
           <button
             className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75"

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import twiter from "public/assets/button-footer/twitter.svg";
 import facebook from "public/assets/button-footer/facebook.svg";
@@ -14,16 +15,16 @@ const Footer = () => {
               <h4 className=" font-bold text-2xl">Our Services</h4>
               <ul className="mt-8 text-lg">
                 <li className="mb-4 hover:underline">
-                  <a href="#">Shadow Teacher</a>
+                  <Link href="courses">Shadow Teacher</Link>
                 </li>
                 <li className="mb-4 hover:underline">
-                  <a href="#">Therapists</a>
+                  <Link href="courses">Therapists</Link>
                 </li>
                 <li className="mb-4 hover:underline">
-                  <a href="#">Remidial Teaching</a>
+                  <Link href="courses">Remidial Teaching</Link>
                 </li>
                 <li className="mb-4 hover:underline">
-                  <a href="#">Home Program</a>
+                  <Link href="courses">Home Program</Link>
                 </li>
               </ul>
             </div>
@@ -45,7 +46,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center hover:bg-primary-pink duration-75">
-                  <a href="" target="blank">
+                  <a href="">
                     <Image src={twiter} alt="twitter" />
                   </a>
                 </li>
