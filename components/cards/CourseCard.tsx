@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import courseImage from "public/assets/photos/course.svg";
-import { CourseDataType } from "../home-section/course-section/CourseSection";
+import { CourseDataType } from "@/data/type";
 
 const CourseCard = ({ course, koordinator }: CourseDataType) => {
   return (
@@ -18,11 +18,6 @@ const CourseCard = ({ course, koordinator }: CourseDataType) => {
       <div className="p-[31px]">
         <h3 className="font-bold text-primary-text text-[24px]">{course}</h3>
         <p className="text-[18px] text-primary-text">{koordinator}</p>
-        {/* <div className="mt-[16px] flex justify-end">
-          <button className="text-white font-bold text-[18px] bg-primary-green w-[90px] h-[48px] rounded-full right-0">
-            $299
-          </button>
-        </div> */}
       </div>
     </div>
   );

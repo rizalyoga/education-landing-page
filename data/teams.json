@@ -1,31 +1,31 @@
 [
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/team-agil.png",
     "name": "Miss Agil",
     "jabatan": "CEO & Founder"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/team-vendy.png",
     "name": "Miss Vendy",
     "jabatan": "Konsultan"
   },
   {
-    "image": "",
-    "name": "Miss Heni",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/remidial-neni.png",
+    "name": "Miss Neni",
     "jabatan": "Head Official"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/remidial-dessy.png",
     "name": "Miss Dessy",
     "jabatan": "Koordinator Remidial Teacher"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/shadow-maria.png",
     "name": "Miss Maria",
     "jabatan": "Koordinator Shadow Teacher"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/terapis-rinay.png",
     "name": "Miss Rinay",
     "jabatan": "Koordinator Terapis"
   }

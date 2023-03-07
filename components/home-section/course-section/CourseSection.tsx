@@ -4,11 +4,7 @@ import { useRouter } from "next/router";
 import CourseCard from "../../cards/CourseCard";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
 import courseData from "data/course-data.json";
-
-export interface CourseDataType {
-  course: string;
-  koordinator: string;
-}
+import { CourseDataType } from "@/data/type";
 
 const CourseSection = () => {
   const [dataCourse, setDataCourse] = useState<CourseDataType[]>(courseData);

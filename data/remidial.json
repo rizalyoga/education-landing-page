@@ -1,16 +1,16 @@
 [
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/remidial-dessy.png",
     "name": "Miss Dessy",
     "jabatan": "Koordinator Remidial Teacher"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/remidial-neni.png",
     "name": "Miss Neni",
     "jabatan": "Remidial Teacher"
   },
   {
-    "image": "",
+    "image": "https://raw.githubusercontent.com/rizalyoga/education-landing-page/main/public/assets/photos/remidial-donik.png",
     "name": "Miss Donik",
     "jabatan": "Remidial Teacher"
   }
