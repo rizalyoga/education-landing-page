@@ -29,10 +29,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="contact">
-              <h1 className="font-bold text-[48px] text-white ">
+              <h1 className="font-bold text-title-sub-page text-white ">
                 Athalia&apos;s Blessing
               </h1>
-              <p className="text-white leading-8 my-6 text-lg">
+              <p className="text-white leading-8 mb-6 text-lg">
                 Yayasan Athalia Berkat Anugrah (Athalia&apos;s Blessing
                 Surabaya)
               </p>
@@ -46,7 +46,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="bg-primary-green  p-4 w-12 rounded-full flex justify-center items-center hover:bg-primary-pink duration-75">
-                  <a href="">
+                  <a href="#">
                     <Image src={twiter} alt="twitter" />
                   </a>
                 </li>
@@ -60,18 +60,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
-            {/* <div className=" flex flex-col basis-[30%]">
-              <h4 className="text-white font-bold mb-4">NEWSLETTER</h4>
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-[370px] h-[48px] rounded-full p-3"
-              />
-              <button className="w-[170px] h-[48px] rounded-full bg-primary-green my-[18px] text-white font-bold hover:border-2 hover:border-white duration-75">
-                Subsribe
-              </button>
-            </div> */}
           </div>
           <hr className="mb-[42px]" />
           <div className="flex justify-between mb-[42px] text-white">

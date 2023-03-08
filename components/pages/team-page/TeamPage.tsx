@@ -36,7 +36,7 @@ const TeamPage = () => {
           className="absolute top-12 right-40"
         />
         <div className="container min-h-screen">
-          <h1 className="text-center text-primary-text font-bold text-[3rem] pt-12">
+          <h1 className="text-center text-primary-text font-bold text-title-sub-page pt-12">
             Organizational Structure
           </h1>
           <div className="py-10">
