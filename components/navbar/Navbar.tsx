@@ -11,19 +11,9 @@ const Navbar = () => {
       <div className="container">
         <div className="min-h-[112px] flex justify-between items-center h-full">
           <div className="flex justify-center items-center gap-2">
-            <Image src={logo} alt="logo" height={54} />
-            <h1 className="font-bold text-[40px] text-white">Athalia&apos;s</h1>
+            <Image src={logo} alt="logo" height={50} />
+            <h1 className="font-bold text-title text-white">Athalia&apos;s</h1>
           </div>
-          {/* <form className="relative">
-            <input
-              type="text"
-              placeholder="Search courses"
-              className="min-w-[570px] min-h-[48px] rounded-full px-5"
-            />
-            <button className="w-12 h-12 bg-primary-green flex justify-center items-center rounded-full absolute right-0 -mt-12">
-              <Image src={search} alt="search" />
-            </button>
-          </form> */}
           <div className="h-12 w-full pt-3">
             <ul className="flex justify-center items-end gap-8 ">
               <li className="font-bold text-white text-[20px] hover:text-primary-green duration-75">
@@ -44,9 +34,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            {/* <button className="w-12 h-12 bg-white flex justify-center items-center rounded-full">
+            <button className="w-12 h-12 bg-white justify-center items-center rounded-full hidden">
               <Image src={menu} alt="menu-button" />
-            </button> */}
+            </button>
             <a
               href="#register"
               className="font-bold text-primary-violet bg-white px-12 py-2 rounded-full my-4 cursor-pointer   hover:bg-primary-green hover:text-white duration-75"

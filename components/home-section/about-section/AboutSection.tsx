@@ -21,10 +21,10 @@ const AboutSection = () => {
             className="absolute top-0 right-0 -z-10"
           />
           <h4 className="font-bold text-primary-text">ABOUT</h4>
-          <h1 className="font-bold text-primary-text text-[58px] -mb-[20px]">
+          <h1 className="font-bold text-primary-text text-title-section -mb-[20px]">
             We Are Experts
           </h1>
-          <h1 className="font-bold text-primary-text text-[58px]">
+          <h1 className="font-bold text-primary-text text-title-section">
             in Elearning
           </h1>
           <p className="my-[23px] text-primary-text">Distant orb has power</p>

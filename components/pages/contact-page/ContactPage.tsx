@@ -10,7 +10,7 @@ const ContactPage = () => {
       <div className="bg-sub-page">
         <div className="container ">
           <div className="w-[70%] m-auto">
-            <h1 className="text-[3rem] pt-12 pb-10 font-bold text-primary-text text-center">
+            <h1 className="text-title-sub-page pt-12 pb-10 font-bold text-primary-text text-center">
               Contact Us
             </h1>
             <p className="text-center text-lg">

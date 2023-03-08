@@ -38,7 +38,7 @@ const CoursesPage = () => {
           className="absolute top-8 left-40"
         />
         <div className="container min-h-screen">
-          <h1 className="text-center text-primary-text text-[3rem] font-bold pt-12">
+          <h1 className="text-center text-primary-text text-title-sub-page font-bold pt-12">
             Our Services
           </h1>
           <div className="my-16">

@@ -9,6 +9,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontSize: {
+      title: "2.5rem",
+      "title-section": "3.625rem",
+      "title-sub-page": "3rem",
+    },
     extend: {
       colors: {
         // Configure your color palette here

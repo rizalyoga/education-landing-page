@@ -15,7 +15,7 @@ const AboutPage = () => {
           />
           <div className="about w-[80%] m-auto pb-16">
             <div className="about-us pt-12">
-              <h1 className="text-[3rem] font-bold text-primary-text text-center">
+              <h1 className="text-title-sub-page font-bold text-primary-text text-center">
                 About Us
               </h1>
               <p className="py-10 text-center text-primary-text text-lg">
@@ -31,7 +31,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="vision text-lg">
-              <h1 className="text-[3rem] font-bold text-primary-text text-center">
+              <h1 className="text-title-sub-page font-bold text-primary-text text-center">
                 Vision
               </h1>
               <p className="text-center py-10 px-10 text-primary-text">
@@ -40,7 +40,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="Mission text-lg">
-              <h1 className="text-[3rem] py-10 font-bold text-primary-text text-center">
+              <h1 className="text-title-sub-page py-10 font-bold text-primary-text text-center">
                 Missions
               </h1>
               <ol className="list-decimal text-primary-text">

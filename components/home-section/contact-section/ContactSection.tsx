@@ -10,7 +10,7 @@ const ContactSection = () => {
         <div className="h-full flex items-center gap-24 min-h-screen">
           <div className="basis-[35%]">
             <h4 className="font-bold text-primary-text">REGISTER</h4>
-            <h2 className="font-bold text-primary-text text-[56px] my-4">
+            <h2 className="font-bold text-primary-text text-title-section my-4">
               Register Now
             </h2>
             <h4 className="text-primary-text">Sky took on a wonderful</h4>
