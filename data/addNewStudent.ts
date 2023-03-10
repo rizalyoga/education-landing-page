@@ -6,5 +6,9 @@ export const addNewStudent = async (payload: any) => {
     body: JSON.stringify(payload),
   });
 
-  return response.json();
+  if (response.ok) {
+    return "Anda berhasil mendaftar";
+  } else {
+    return "Gagal Mendaftar";
+  }
 };

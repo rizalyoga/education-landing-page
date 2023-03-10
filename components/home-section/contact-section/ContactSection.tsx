@@ -21,13 +21,19 @@ const ContactSection = () => {
       message,
     };
 
-    addNewStudent(data).then((e) => console.log(e));
+    addNewStudent(data).then((e) => {
+      if (e.includes("berhasil")) {
+        setCourse("");
+        setEmail("");
+        setName("");
+        setMessage("");
+        setPhone("");
 
-    // setCourse("");
-    // setEmail("");
-    // setName("");
-    // setMessage("");
-    // setPhone("");
+        alert(e);
+      } else {
+        alert("Maaf terjadi kesalahan");
+      }
+    });
   };
 
   return (
