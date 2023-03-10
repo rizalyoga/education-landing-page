@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
+import { addNewStudent } from "@/data/addNewStudent";
 
 const ContactSection = () => {
+  const [name, setName] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [course, setCourse] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      phone,
+      email,
+      course,
+      message,
+    };
+
+    addNewStudent(data).then((e) => console.log(e));
+
+    // setCourse("");
+    // setEmail("");
+    // setName("");
+    // setMessage("");
+    // setPhone("");
+  };
+
   return (
     <section className="min-h-[880px] my-20 relative" id="register">
       <div className="absolute w-[80%] h-full bg-secondary-violet -z-10 "></div>
@@ -29,25 +56,43 @@ const ContactSection = () => {
               alt="polcadot"
               className="absolute right-44 mt-24 "
             />
-            <form className="relative min-w-[570px] min-h-[560px] rounded-3xl bg-primary-violet">
+            <form
+              onSubmit={handleSubmit}
+              className="relative min-w-[570px] min-h-[560px] rounded-3xl bg-primary-violet"
+            >
               <div className="relative flex flex-col w-full p-12">
                 <input
                   type="text"
                   placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
                 />
                 <input
                   type="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
                 />
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="rounded-full h-12 px-12 my-4"
+                />
+                <input
+                  type="text"
+                  placeholder="Course"
+                  value={course}
+                  onChange={(e) => setCourse(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
                 />
                 <textarea
                   placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="rounded-3xl px-12 py-4 my-4"
                   rows={4}
                 />
@@ -55,7 +100,7 @@ const ContactSection = () => {
                   <input
                     type="submit"
                     value="Submit"
-                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer absolute right-0 hover:border-2 hover:border-white duration-75"
+                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer  hover:border-2 float-right hover:border-white duration-75"
                   />
                 </div>
               </div>
