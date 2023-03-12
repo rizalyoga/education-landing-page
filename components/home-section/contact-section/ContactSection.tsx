@@ -19,21 +19,40 @@ const ContactSection = () => {
       email,
       course,
       message,
+      date: new Date(),
     };
 
-    addNewStudent(data).then((e) => {
-      if (e.includes("berhasil")) {
-        setCourse("");
-        setEmail("");
-        setName("");
-        setMessage("");
-        setPhone("");
+    if (
+      data.name === "" ||
+      data.phone === "" ||
+      data.email === "" ||
+      data.course === ""
+    ) {
+      alert("Silahkan lengkapi data anda");
+    } else if (data.name.length < 4) {
+      alert("Silahkan cek kembali data anda");
+    } else if (!/^\d+$/.test(data.phone) || data.phone.length <= 6) {
+      alert("Silahkan cek kembali phone data anda");
+    } else {
+      addNewStudent(data).then((e) => {
+        if (e.includes("berhasil")) {
+          setCourse("Choose one");
+          setEmail("");
+          setName("");
+          setMessage("");
+          setPhone("");
+          alert(e);
+        } else {
+          alert("Maaf terjadi kesalahan");
+        }
+      });
+    }
+  };
 
-        alert(e);
-      } else {
-        alert("Maaf terjadi kesalahan");
-      }
-    });
+  // This function is triggered when the select changes
+  const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    setCourse(value);
   };
 
   return (
@@ -69,10 +88,11 @@ const ContactSection = () => {
               <div className="relative flex flex-col w-full p-12">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Full Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
                 <input
                   type="email"
@@ -80,6 +100,7 @@ const ContactSection = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
                 <input
                   type="text"
@@ -87,14 +108,18 @@ const ContactSection = () => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
-                <input
-                  type="text"
-                  placeholder="Course"
-                  value={course}
-                  onChange={(e) => setCourse(e.target.value)}
+                <select
+                  onChange={selectChange}
                   className="rounded-full h-12 px-12 my-4"
-                />
+                >
+                  <option defaultValue={"Choose one"}>Choose one</option>
+                  <option value="Shadow Teacher">Shadow Teacher</option>
+                  <option value="Therapists">Therapists</option>
+                  <option value="Remidial Teaching">Remidial Teaching</option>
+                  <option value="Home program">Home program</option>
+                </select>
                 <textarea
                   placeholder="Message"
                   value={message}
@@ -106,7 +131,7 @@ const ContactSection = () => {
                   <input
                     type="submit"
                     value="Submit"
-                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer  hover:border-2 float-right hover:border-white duration-75"
+                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer  hover:border-2 float-right hover:border-white duration-75 active:bg-white active:text-primary-green"
                   />
                 </div>
               </div>

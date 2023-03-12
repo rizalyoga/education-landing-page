@@ -36,7 +36,7 @@ const AboutSection = () => {
             anak-anak mencapai potensi terbaik mereka.
           </p>
           <button
-            className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75"
+            className="font-bold text-primary-violet text-[18px] h-[48px] w-[170px] mt-14 bg-[#E5E4F3] rounded-full hover:bg-primary-green hover:text-white duration-75 active:bg-white active:text-primary-violet"
             onClick={() => router.push("about")}
           >
             Explore
