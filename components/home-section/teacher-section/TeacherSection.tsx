@@ -28,7 +28,7 @@ const TeacherSection = () => {
         </div>
         <div className="flex justify-center items-center mt-16">
           <button
-            className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full hover:bg-primary-green hover:text-white duration-75"
+            className="font-bold text-primary-violet text-[18px] w-[170px] h-[48px] bg-secondary-violet rounded-full hover:bg-primary-green hover:text-white duration-75 active:bg-white active:text-primary-violet"
             onClick={() => router.push("teams")}
           >
             See all

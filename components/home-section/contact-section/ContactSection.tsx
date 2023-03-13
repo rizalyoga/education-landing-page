@@ -1,8 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import polcadot from "public/assets/shapes/pink-polcadot.svg";
+import { addNewStudent } from "@/data/addNewStudent";
 
 const ContactSection = () => {
+  const [name, setName] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [course, setCourse] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      phone,
+      email,
+      course,
+      message,
+      date: new Date(),
+    };
+
+    if (
+      data.name === "" ||
+      data.phone === "" ||
+      data.email === "" ||
+      data.course === ""
+    ) {
+      alert("Silahkan lengkapi data anda");
+    } else if (data.name.length < 4) {
+      alert("Silahkan cek kembali data anda");
+    } else if (!/^\d+$/.test(data.phone) || data.phone.length <= 6) {
+      alert("Silahkan cek kembali phone data anda");
+    } else {
+      addNewStudent(data).then((e) => {
+        if (e.includes("berhasil")) {
+          setCourse("Choose one");
+          setEmail("");
+          setName("");
+          setMessage("");
+          setPhone("");
+          alert(e);
+        } else {
+          alert("Maaf terjadi kesalahan");
+        }
+      });
+    }
+  };
+
+  // This function is triggered when the select changes
+  const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    setCourse(value);
+  };
+
   return (
     <section className="min-h-[880px] my-20 relative" id="register">
       <div className="absolute w-[80%] h-full bg-secondary-violet -z-10 "></div>
@@ -29,25 +81,49 @@ const ContactSection = () => {
               alt="polcadot"
               className="absolute right-44 mt-24 "
             />
-            <form className="relative min-w-[570px] min-h-[560px] rounded-3xl bg-primary-violet">
+            <form
+              onSubmit={handleSubmit}
+              className="relative min-w-[570px] min-h-[560px] rounded-3xl bg-primary-violet"
+            >
               <div className="relative flex flex-col w-full p-12">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Full Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
                 <input
                   type="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   className="rounded-full h-12 px-12 my-4"
+                  required
                 />
+                <select
+                  onChange={selectChange}
+                  className="rounded-full h-12 px-12 my-4"
+                >
+                  <option defaultValue={"Choose one"}>Choose one</option>
+                  <option value="Shadow Teacher">Shadow Teacher</option>
+                  <option value="Therapists">Therapists</option>
+                  <option value="Remidial Teaching">Remidial Teaching</option>
+                  <option value="Home program">Home program</option>
+                </select>
                 <textarea
                   placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="rounded-3xl px-12 py-4 my-4"
                   rows={4}
                 />
@@ -55,7 +131,7 @@ const ContactSection = () => {
                   <input
                     type="submit"
                     value="Submit"
-                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer absolute right-0 hover:border-2 hover:border-white duration-75"
+                    className="font-bold text-white bg-primary-green h-12 w-[170px] rounded-full my-4 cursor-pointer  hover:border-2 float-right hover:border-white duration-75 active:bg-white active:text-primary-green"
                   />
                 </div>
               </div>
